@@ -1,0 +1,29 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+
+    <h:head/>
+    <h:form id="myForm">
+
+        <div style="width: 500px; margin-left: auto; margin-right: auto; margin-top: 50px">
+            <h1>Testsystem</h1>
+            <p:tabView effect="slide" effectDuration="normal">
+                <p:tab title="Inloggning">
+                    <div><h:outputText id="authInfo" escape="false" value="#{managedBean.authInfo}"/></div>
+                    <p:commandButton style="margin-top: 20px;" value="Logga in" action="#{managedBean.login}"
+                                     rendered="#{not managedBean.loggedIn}"/>
+                </p:tab>
+                <p:tab title="Viktigt1">
+                    Bacon ipsum dolor sit amet swine tail andouille, jowl meatball pancetta ribeye. Drumstick boudin brisket ribeye capicola turkey. Corned beef tail chuck shank. Bresaola andouille turkey, doner boudin tenderloin tri-tip.
+
+                    Leberkas ham hock frankfurter pancetta jerky kielbasa. Tenderloin ground round meatloaf pork biltong salami. Tenderloin tail jerky sausage sirloin swine, biltong short loin brisket. Ribeye beef ribs turducken, drumstick meatball doner chicken pancetta tongue ham hock jowl meatloaf bresaola tail corned beef.
+                </p:tab>
+                <p:tab title="Viktigt2">
+                    Tongue pork belly tail pork chop pastrami tri-tip drumstick rump. Fatback pig pork doner. Kevin swine bresaola ball tip tail brisket capicola, hamburger ribeye tenderloin rump short ribs. Pork chop pastrami boudin hamburger ground round filet mignon swine tri-tip turkey flank corned beef venison kevin tail. Short ribs corned beef ham, pig frankfurter meatloaf kielbasa pork belly beef ribs sirloin. Strip steak ham hock ball tip, biltong boudin sausage cow fatback leberkas kielbasa pork chop pork loin.
+                </p:tab>
+            </p:tabView>
+        </div>
+    </h:form>
+</ui:composition>

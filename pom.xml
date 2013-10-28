@@ -30,4 +30,8 @@
     <url>http://oppna-program-siths-mobile.googlecode.com/svn/trunk</url>
   </scm>
 
+  <properties>
+    <apache.cxf.version>2.7.0</apache.cxf.version>
+  </properties>
+
 </project>

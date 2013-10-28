@@ -24,6 +24,12 @@
 			<version>${project.version}</version>
 		</dependency>
 
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>siths-mobile-core-bc-composite-schema</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
