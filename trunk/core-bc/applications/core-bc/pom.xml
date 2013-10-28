@@ -25,7 +25,13 @@ Generation time : 2013-10-17 15:12:48 CEST
   <name>${project.artifactId}</name>
 
   <dependencies>
+
     <dependency>
+      <groupId>org.mortbay.jetty</groupId>
+      <artifactId>jetty</artifactId>
+      <version>6.1.26</version>
+    </dependency>
+    <!--<dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>siths-mobile-core-bc-module-web</artifactId>
       <version>${project.version}</version>
@@ -44,6 +50,6 @@ Generation time : 2013-10-17 15:12:48 CEST
       <artifactId>siths-mobile-core-bc-module-intsvc</artifactId>
       <version>${project.version}</version>
       <type>war</type>
-    </dependency>
+    </dependency>-->
   </dependencies>
 </project>
